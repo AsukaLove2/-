@@ -7,3 +7,10 @@ MD文档中将记录实践进度、目标网页、爬取内容、错误记录和
   错误记录：None
   解决方法：None
 
+2023.8.23
+  进度：完成了使用selenium实现自动登录淘宝的功能
+  目标网页：淘宝登录
+  爬取内容：None
+  错误记录：出现滑块验证时，无法定位滑块
+  解决方法：出现滑块的原因是淘宝检测到了我是爬虫程序，window.navigator.webdriver的值True，因此被判断为了爬虫，因为我始终无法解决“无法定位滑块”的错误，于是我上网找资料，发现了出现滑块验证的原因，
+  即要将window.navigator.webdriver的值修改为False，所以在程序中添加两个语句之后，再次运行发现window.navigator.webdriver的值变为了False
