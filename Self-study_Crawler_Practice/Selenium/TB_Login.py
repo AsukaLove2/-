@@ -28,11 +28,11 @@ driver.get(url=url)
 
 # 定位账户和密码输入框，并输入内容
 account = driver.find_element(By.NAME,'fm-login-id')
-account.send_keys('trans69')
+account.send_keys('')
 time.sleep(2)
 
 password = driver.find_element(By.NAME,'fm-login-password')
-password.send_keys('ppp2236995')
+password.send_keys('')
 time.sleep(2)
 
 # 点击登录
