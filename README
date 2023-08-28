@@ -24,3 +24,15 @@ MD文档中将记录实践进度、目标网页、爬取内容、错误记录和
   解决方法：
     1.问题1的出现，个人认为是短时间内频繁登录导致的，可能是账号问题。因为即使出现滑块验证，至少手动滑动后能成功。
     2.问题2的原因，应该是新页面使用了另一种网页技术，受限于自己的web知识无法定位问题。
+
+2023.8.28
+  进度：制作了一个个人使用的脚本
+  目标网页：某资源网站
+  爬取内容：根据资源名
+  错误记录：
+    1.在使用selenium定位输入框时，出现了selenium.common.exceptions.WebDriverException: Message: unknown error: Runtime.callFunctionOn threw exception: TypeError: JSON.stringify is not a function
+    at buildError (<anonymous>:323:18)。
+    2.使用urllib爬取数据时，数据不完整
+  解决方法：
+    1.问题1的原因，根据网上所说时chromedriver导致的问题。但也跟笔者的知识水平有关，因为我完全无法定位问题，对web方面的知识知之甚少，JS代码也不懂。还需多多进行爬取实践。
+    2.问题2的原因，就是缺少UA和Cookie。
