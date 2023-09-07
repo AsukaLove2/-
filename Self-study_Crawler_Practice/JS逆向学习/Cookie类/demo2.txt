@@ -1,0 +1,10 @@
+JS逆向学习-->二次cookie
+二次cookie的特点：基于网页请求的二次，每一次都会获得一个cookie，且cookie也是被加密了的。第一次请求到一个cookie1和JS代码，并使用cookie1来生成cookie2，
+然后在第二次请求时包含这两次cookie。
+使用了此技术的网页，可能还会存在JS混淆。
+如何破解二次cookie和JS混淆？
+1.首先从第一次请求中获取第一次的cookie1和JS代码。
+2.在JS代码中，找到生成cookie的地方。可以通过页面置换的方法。或者根据cookie的DOM特点来搜索document关键字。
+3.在浏览器中运行JS代码，在关键数据前断点，找到cookie的位置。并获取cookie的值
+4.还原生成cookie的JS代码
+ 
