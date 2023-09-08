@@ -1,0 +1,5 @@
+JS逆向学习-->webpack
+webpack的结构：
+function(A){加载器}({模块})
+如何快速分辨是否使用了webpack技术？
+查看代码中是否出现了上述结构的代码、查看是否有形如a.b = xxx
